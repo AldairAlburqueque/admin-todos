@@ -3,9 +3,7 @@ import { NextResponse, NextRequest } from 'next/server'
 
 export async function GET(req: Request) {
   
-  await prisma.todo.deleteMany(); //delete * from todo
-
-  await prisma.todo.deleteMany();
+   await prisma.todo.deleteMany(); //delete * from todo
 
   // const todo = await prisma.todo.create({
   //   data: {description: 'Piefra de alma'}
@@ -21,7 +19,6 @@ export async function GET(req: Request) {
     ]
   })
 
-
- return NextResponse.json( {message: 'Seed Executed'}
- );
- }
+  return NextResponse.json( {message: 'Seed Executed'}
+  );
+}

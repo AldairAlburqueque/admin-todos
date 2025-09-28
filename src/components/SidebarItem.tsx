@@ -1,8 +1,6 @@
 'use client'
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CiBookmarkCheck } from "react-icons/ci";
 
 interface Prop {
   icon: React.ReactNode;

@@ -2,7 +2,7 @@ import { CiBookmarkCheck, CiLogout } from "react-icons/ci";
 import Link from 'next/link';
 import Image from "next/image";
 import { SiderbarItem } from "./SidebarItem";
-import { IoCalendarOutline, IoCheckboxOutline, IoListOutline } from "react-icons/io5";
+import { IoBackspaceOutline, IoCalendarOutline, IoCheckboxOutline, IoCodeWorkingOutline, IoListOutline } from "react-icons/io5";
 
 const menuItems = [
   {
@@ -19,6 +19,17 @@ const menuItems = [
     icon: <IoListOutline />,
     title: 'Server Actions',
     path: '/dashboard/server-todos'
+  },
+
+  {
+    icon: <IoCodeWorkingOutline />,
+    title: 'Cookies',
+    path: '/dashboard/cookies'
+  },
+  {
+    icon: <IoBackspaceOutline />,
+    title: 'Products',
+    path: '/dashboard/products'
   },
 ]
 
